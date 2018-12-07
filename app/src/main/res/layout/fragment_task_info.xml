@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TaskInfoFragment">
+
+
+    <TextView
+        android:id="@+id/titleSongTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/titleSongText" />
+
+    <TextView
+        android:id="@+id/ArtNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSongTextView"
+        android:layout_alignStart="@+id/titleSongTextView"
+        android:layout_alignEnd="@+id/titleSongTextView"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/ArtNameText"
+        />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ArtNameTextView"
+        android:layout_alignStart="@+id/titleSongTextView"
+        android:layout_alignEnd="@+id/titleSongTextView"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/releaseDate" />
+
+    <ImageView
+        android:id="@+id/SPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/titleSongTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/deleteSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="28dp"
+        android:src="@android:drawable/ic_delete"
+        app:backgroundTint="@android:color/background_light"
+        app:rippleColor="@color/colorAccent" />
+
+
+
+
+</RelativeLayout>

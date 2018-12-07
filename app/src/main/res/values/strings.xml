@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework2</string>
+
+    <string name="titleSongText">Song</string>
+    <string name="ArtNameText">Artist</string>
+    <string name="releaseDate">Release date</string>
+    <string name="addMusic">New song</string>
+    <string name="default_song">Random Music</string>
+    <string name="default_artist">Random Artist</string>
+    <string name="default_date">Beginning of times</string>
+</resources>
