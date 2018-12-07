@@ -57,10 +57,7 @@ public class TaskAddActivity extends AppCompatActivity {
                     imm.hideSoftInputFromWindow(focusedView.getWindowToken(),0);
                 }
 
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                intent.putExtra(MainActivity.taskExtra,tmp);
-                startActivity(intent);
-
+                finish();
 
             }
         });

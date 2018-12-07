@@ -85,6 +85,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onResume(){
+        super.onResume();
+        TaskListFragment taskFr = (TaskListFragment)getSupportFragmentManager().findFragmentById(R.id.taskFragment);
+        ArrayAdapter<Task> taskAdapter = (ArrayAdapter<Task>) taskFr.getListAdapter();
+        taskAdapter.notifyDataSetChanged();
+    }
+
     private void startSecondActivity(AdapterView<?> parent, int position) {
 
         Intent intent = new Intent(this, TaskInfoActivity.class);
