@@ -29,7 +29,7 @@ public class TaskInfoActivity extends AppCompatActivity {
         final String s3 =tmp.release_date;
 
         age.setText(s3);
-        if(s3.equals("")==true){age.setText("undifined");}
+        if(s3.equals("")==true){age.setText("nothing");}
         nameSong.setText(s);
         artist.setText(s2);
 
@@ -38,11 +38,17 @@ public class TaskInfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = getIntent();
+
+                Task tmp = intent.getExtras()
+
+                MainActivity.myTasks.remove(tmp);
+                /*
                 for (int i = 0; i <MainActivity.myTasks.size() ; i++) {
                     if (MainActivity.myTasks.get(i).Song_title.equals(s)&&MainActivity.myTasks.get(i).Artist_name.equals(s2)&&MainActivity.myTasks.get(i).release_date.equals(s3)){
                         MainActivity.myTasks.remove(i);
                     }
-                }
+                }*/
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 intent.putExtra("remove","remove");
                 startActivity(intent);

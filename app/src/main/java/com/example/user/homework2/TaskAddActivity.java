@@ -47,10 +47,6 @@ public class TaskAddActivity extends AppCompatActivity {
                 Task tmp = new Task(song_title, song_artist, song_releaseDate);
                 MainActivity.myTasks.add(tmp);
 
-               /* TaskListFragment taskFr = (TaskListFragment) getSupportFragmentManager().findFragmentById(R.id.taskFragment);
-                ArrayAdapter<Task> taskAdapter = (ArrayAdapter<Task>) taskFr.getListAdapter();
-                taskAdapter.notifyDataSetChanged();*/
-
                 ((EditText)findViewById(R.id.nameSong)).setText(null);
                 ((EditText)findViewById(R.id.nameArtist)).setText(null);
                 ((EditText)findViewById(R.id.releaseDate)).setText(null);
