@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".TaskInfoActivity" />
         <activity android:name=".TaskAddActivity"></activity>
+
+
     </application>
 
 </manifest>

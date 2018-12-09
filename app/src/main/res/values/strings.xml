@@ -8,4 +8,11 @@
     <string name="default_song">Random Music</string>
     <string name="default_artist">Random Artist</string>
     <string name="default_date">Beginning of times</string>
+
+    <string-array name="myImageArray">
+        <item>image 1</item>
+        <item>image 2</item>
+        <item>image 3</item>
+    </string-array >
+
 </resources>
